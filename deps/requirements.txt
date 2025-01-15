@@ -1,0 +1,6 @@
+catkin_pkg
+black
+numpy==1.23.2
+scipy>=1.5.0
+matplotlib
+setuptools>=60.2.0

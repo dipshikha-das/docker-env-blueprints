@@ -1,0 +1,22 @@
+services:
+  ros_local_base: #Can be renamed accordingly
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ${CONTAINER_NAME}
+    image: ${IMAGE_NAME}
+    volumes:
+      - ${HOST_HOME}/${LOCAL_WORKSPACE}:/ros_ws/src:rw #Mounts the workspace within /ros_ws/src
+      - ./ros_config:/ros_config:rw  # External volume for ROS configuration, if any
+      - /tmp/.X11-unix:/tmp/.X11-unix  # For GUI applications (e.g., Rviz, Gazebo)
+      - ${HOST_HOME}/.ros/cyclonedds.xml:/root/.ros/cyclonedds.xml #Required for ROS2
+    environment:
+      - DISPLAY=${DISPLAY}
+    env_file:
+      - .env 
+    network_mode: "host"  # Use host networking for direct device access (use cautiously)
+    privileged: true  # Optional, for extra permissions, e.g., access to hardware
+    tty: true
+    stdin_open: true
+    restart: always
+    command: bash -c "echo 'Container started'; bash"
