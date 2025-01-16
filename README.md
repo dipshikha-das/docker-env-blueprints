@@ -8,7 +8,7 @@
 - [Setup Instructions](#setup-instructions)
   - [Environment Setup](#environment-setup)
   - [Package Setup](#package-dependent-setup)
-  - [Build and run](#--how-to-build-and-run)
+  - [Build and run](#how-to-build-and-run)
   - [Testing with ros distros](#testing)
   - [Feedback & Contributions](#-contributefeedback-to-the-project)
 
@@ -24,11 +24,14 @@ Before you begin, ensure you have the following installed:
 ## Setup Instructions
 
 ### Environment Setup
+> [!IMPORTANT]
+> The current stable version and actively maintained branch of the repository is the **`ros-any`** branch. Please ensure you are using this branch for your setup. Other branches may contain experimental or in-progress features.
 
 1. Clone the repository to your local machine:
 
     ```bash
     git clone <repository-url>
+    git checkout ros-any
     cd docker-env-blueprints
     ```
 ### Package Dependent Setup
