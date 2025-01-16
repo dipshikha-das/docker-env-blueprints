@@ -1,3 +1,15 @@
+# ==============================================================================
+# Copyright (c) 2025 Dipshikha Das
+# All rights reserved. This script is licensed under the MIT License.
+#
+# Description: This script demonstrates commands to execute
+# for ros docker creation
+#
+# Author: Dipshikha Das
+# Version: 1.0
+# Date: 2025-01-15
+# ==============================================================================
+
 #!/bin/bash
 
 set -e
