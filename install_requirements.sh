@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # ==============================================================================
 # Copyright (c) 2025 Dipshikha Das
 # All rights reserved. This script is licensed under the MIT License.
@@ -10,7 +12,6 @@
 # Date: 2025-01-15
 # ==============================================================================
 
-#!/bin/bash
 
 # Exit on error
 set -xe

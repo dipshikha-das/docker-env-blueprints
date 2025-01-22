@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # ==============================================================================
 # Copyright (c) 2025 Dipshikha Das
 # All rights reserved. This script is licensed under the MIT License.
@@ -8,8 +10,6 @@
 # Version: 1.0
 # Date: 2025-01-09
 # ==============================================================================
-
-#!/bin/bash
 
 sudo docker compose build --no-cache --progress=plain
 sudo docker compose up -d
