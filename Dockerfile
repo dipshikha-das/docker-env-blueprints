@@ -12,11 +12,13 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 # Install generic packages
 RUN apt-get update && apt-get install -y \
+    terminator \
     git \
     vim \
     sudo \
     curl \
     wget \
+    net-tools \
     && apt-get clean
 
 # Copy and install required packages
